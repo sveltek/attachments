@@ -33,7 +33,7 @@
   "scripts": {
     "build": "hyperbundler",
     "dev": "vite",
-    "build:playground": "vite",
+    "build:playground": "vite build",
     "preview": "vite preview",
     "sync": "svelte-kit sync",
     "lint": "eslint .",
