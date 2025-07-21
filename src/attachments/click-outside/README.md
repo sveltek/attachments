@@ -60,7 +60,15 @@ function clickOutside(
 
 ```ts
 interface ClickOutsideOptions {
-  element?: Element | Document | Window
+  event?: {
+    /**
+     * @default document
+     */
+    target?: Element | Document | Window
+  }
+  /**
+   * @default undefined
+   */
   trigger?: Element | null | (Element | null)[]
 }
 ```

@@ -6,7 +6,7 @@ export function clickOutside(
   options: ClickOutsideOptions = {},
 ): Attachment {
   return (el: Element) => {
-    const { element = document, trigger } = options
+    const { event: { target = document } = {}, trigger } = options
 
     const triggers = Array.isArray(trigger) ? trigger : [trigger]
 
@@ -20,10 +20,10 @@ export function clickOutside(
       callback(event)
     }
 
-    element.addEventListener('click', handler as EventListener, true)
+    target.addEventListener('click', handler as EventListener, true)
 
     return () => {
-      element.removeEventListener('click', handler as EventListener, true)
+      target.removeEventListener('click', handler as EventListener, true)
     }
   }
 }
