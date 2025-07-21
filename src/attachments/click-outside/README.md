@@ -1,6 +1,6 @@
 # clickOutside
 
-## Imports
+## Import
 
 ```ts
 import { clickOutside } from '@sveltek/attachments'
@@ -26,7 +26,7 @@ import { clickOutside } from '@sveltek/attachments'
 {/if}
 ```
 
-### Trigger
+### Custom Trigger
 
 ```svelte
 <script lang="ts">
