@@ -26,12 +26,12 @@ npm install @sveltek/attachments
 
 ## Attachments
 
-- [clickOutside](./src/attachments/click-outside/README.md) → Triggers the callback on `clicks` outside of an element.
-- [keydown](./src/attachments/keydown/README.md) → Triggers the callback on a specific `key` press.
+- [clickOutside](./src/attachments/click-outside/README.md) → Triggers a callback when clicking outside the target element.
+- [keyboard](./src/attachments/keyboard/README.md) → Triggers a callback when a specified keyboard event occurs.
 
 <br>
 
-> Currently, the project includes only two functions, but more will be added over time as development progresses and new requirements emerge.
+> More functions will be added as the project moves forward and new things come up.
 
 ## Community
 
