@@ -1,0 +1,69 @@
+{
+  "name": "@sveltek/attachments",
+  "version": "0.1.0",
+  "author": "Sveltek",
+  "description": "A collection of custom attachments for Svelte.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sveltek/attachments.git"
+  },
+  "homepage": "https://github.com/sveltek/attachments",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "sveltek",
+    "svelte",
+    "sveltekit",
+    "attachments",
+    "composables",
+    "attachment",
+    "functions",
+    "function",
+    "attach"
+  ],
+  "scripts": {
+    "build": "hyperbundler",
+    "dev": "vite",
+    "build:playground": "vite",
+    "preview": "vite preview",
+    "sync": "svelte-kit sync",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "bump": "taze -f --interactive"
+  },
+  "peerDependencies": {
+    "@types/node": ">=20.0.0",
+    "svelte": ">=5.29.0",
+    "typescript": ">=5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/node": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.8",
+    "@sveltejs/kit": "^2.25.1",
+    "@sveltek/eslint-config": "^1.1.1",
+    "@sveltek/prettier-config": "^1.0.4",
+    "@types/node": "^24.0.15",
+    "eslint": "^9.31.0",
+    "prettier": "^3.6.2",
+    "svelte": "^5.36.12",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.5"
+  }
+}
