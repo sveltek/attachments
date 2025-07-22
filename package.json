@@ -40,7 +40,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
-    "bump": "taze -f --interactive"
+    "bump": "taze -f --interactive",
+    "prepublishOnly": "pnpm run build"
   },
   "peerDependencies": {
     "@types/node": ">=20.0.0",
