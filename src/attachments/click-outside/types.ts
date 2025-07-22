@@ -10,3 +10,5 @@ export interface ClickOutsideOptions {
    */
   trigger?: Element | null | (Element | null)[]
 }
+
+export * from './'

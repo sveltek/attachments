@@ -14,3 +14,5 @@ export interface KeyboardOptions {
    */
   keys?: string[]
 }
+
+export * from './'
