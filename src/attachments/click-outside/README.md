@@ -1,14 +1,12 @@
 # clickOutside
 
-## Import
-
-```ts
-import { clickOutside } from '@sveltek/attachments'
-```
+Triggers a callback when clicking outside the target element.
 
 ## Usage
 
 ### Simple
+
+Triggers when clicking outside an element. Great for modals, popovers, dropdowns etc.
 
 ```svelte
 <script lang="ts">
@@ -27,6 +25,10 @@ import { clickOutside } from '@sveltek/attachments'
 ```
 
 ### Custom Trigger
+
+Specifies a custom `trigger` element, like a button or link that opens the content. Clicks on this `trigger` won’t count as outside clicks.
+
+Defaults to `undefined`, and can be a single target or an array of targets.
 
 ```svelte
 <script lang="ts">
@@ -75,4 +77,4 @@ interface ClickOutsideOptions {
 
 ## Source
 
-[Function](./index.ts)
+[Function](./attachment.ts)

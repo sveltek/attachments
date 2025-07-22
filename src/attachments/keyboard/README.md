@@ -1,14 +1,12 @@
 # keyboard
 
-## Import
-
-```ts
-import { keyboard } from '@sveltek/attachments'
-```
+Triggers a callback when a specified keyboard event occurs.
 
 ## Usage
 
 ### Simple
+
+By default, it triggers a callback on every keypress.
 
 ```svelte
 <script lang="ts">
@@ -23,6 +21,8 @@ import { keyboard } from '@sveltek/attachments'
 ```
 
 ### Custom Keys
+
+Triggers a callback only when the specified keys are pressed.
 
 ```svelte
 <script lang="ts">
@@ -39,7 +39,11 @@ import { keyboard } from '@sveltek/attachments'
 />
 ```
 
+See a full list of [key values](https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_key_values).
+
 ### Custom Event Type
+
+Allows setting a custom keyboard event type to control behavior. Accepted values are `keydown` and `keyup`.
 
 ```svelte
 <script lang="ts">
@@ -57,6 +61,8 @@ import { keyboard } from '@sveltek/attachments'
 ```
 
 ### Custom Event Target
+
+Defines where the keyboard event is listened for. If not set, it uses the `element` itself.
 
 ```svelte
 <script lang="ts">
@@ -104,4 +110,4 @@ interface KeyboardOptions {
 
 ## Source
 
-[Function](./index.ts)
+[Function](./attachment.ts)
