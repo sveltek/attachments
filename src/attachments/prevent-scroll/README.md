@@ -8,7 +8,7 @@ It’s super useful for modals, overlays, or any UI that should temporarily disa
 
 It should be applied to a container that covers the scrollable area you want to block.
 
-If the modal or overlay includes scrollable content inside, apply the action only to the backdrop or outer container to avoid interfering with internal scrolling.
+If the modal or overlay includes scrollable content inside, apply the `attachment` only to the backdrop or outer container to avoid interfering with internal scrolling.
 
 Keyboard-based scroll prevention (e.g. arrows, spacebar) is applied globally to the document while the `attachment` is active, and this behavior can be customized as needed or completely disabled.
 
