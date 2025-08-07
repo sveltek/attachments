@@ -30,12 +30,7 @@ npm install @sveltek/attachments
 
 - [clickOutside](./src/attachments/click-outside/README.md) → Triggers a callback when clicking outside the target element.
 - [keyboard](./src/attachments/keyboard/README.md) → Triggers a callback when a specified keyboard event occurs.
-
-## Community
-
-Feel free to ask questions or share new ideas.
-
-Use the official [discussions](https://github.com/sveltek/attachments/discussions) to get involved.
+- [preventScroll](./src/attachments/prevent-scroll/README.md) → Prevents scrolling on the target element.
 
 ## License
 
