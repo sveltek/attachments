@@ -3,30 +3,31 @@ import type { PreventScrollOptions } from './types'
 
 export function preventScroll(options: PreventScrollOptions = {}): Attachment {
   return (el: Element) => {
+    const keys = options.keydown?.keys || [
+      'ArrowLeft',
+      'ArrowRight',
+      'ArrowUp',
+      'ArrowDown',
+      'PageDown',
+      'PageUp',
+      'Home',
+      'End',
+      ' ',
+    ]
     const {
-      wheel: { enable: wheelEnable = true, target: wheelTarget = el } = {},
-      touchmove: { enable: touchEnable = true, target: touchTarget = el } = {},
-      keydown: {
-        enable: keyEnable = true,
-        target: keyTarget = document,
-        keys = [
-          'ArrowLeft',
-          'ArrowRight',
-          'ArrowUp',
-          'ArrowDown',
-          'PageDown',
-          'PageUp',
-          'Home',
-          'End',
-          ' ',
-        ],
-      } = {},
+      target,
+      handler = (e: Event): void => e.preventDefault(),
+      handlerKey = (e: KeyboardEvent): void => {
+        if (keys.includes(e.key)) e.preventDefault()
+      },
+      wheel: { enable: wheelEnable = true, target: wheelEl = el } = {},
+      touchmove: { enable: touchEnable = true, target: touchEl = el } = {},
+      keydown: { enable: keyEnable = true, target: keyEl = document } = {},
     } = options
 
-    const handler = (e: Event): void => e.preventDefault()
-    const handlerKey = (e: KeyboardEvent): void => {
-      if (keys.includes(e.key)) e.preventDefault()
-    }
+    const wheelTarget = target || wheelEl
+    const touchTarget = target || touchEl
+    const keyTarget = target || keyEl
 
     if (wheelEnable) {
       wheelTarget.addEventListener('wheel', handler, { passive: false })
