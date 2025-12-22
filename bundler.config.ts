@@ -4,11 +4,11 @@ export default defineConfig({
   entries: [
     {
       input: './src/attachments/index.ts',
-      output: './dist/index.mjs',
+      output: './dist/index.js',
     },
     {
       dts: './src/attachments/types.ts',
-      output: './dist/index.d.mts',
+      output: './dist/index.d.ts',
       externals: [/^svelte/],
     },
   ],
