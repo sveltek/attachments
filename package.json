@@ -1,6 +1,6 @@
 {
   "name": "@sveltek/attachments",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "Sveltek",
   "description": "A collection of custom attachments for Svelte.",
   "license": "MIT",
