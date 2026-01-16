@@ -8,7 +8,7 @@
 >
 > Since [attachments](https://svelte.dev/docs/svelte/svelte-attachments) are a new feature in **Svelte**, this project is in an early testing phase to experiment with their implementation. As a result, breaking changes are very likely before the first stable release.
 >
-> If you find any issues or bugs, please [report](https://github.com/sveltek/markdown/issues/new/choose) them so the project can be improved.
+> If you find any issues or bugs, please [report](https://github.com/sveltek/attachments/issues/new/choose) them so the project can be improved.
 
 <br>
 
